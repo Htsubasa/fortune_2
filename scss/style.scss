@@ -176,6 +176,11 @@ header{
                         padding: 34px 0px 31px 0px;
                         color: #0C2B4A;
 
+                        &:hover{
+                            opacity: 0.7;
+                            transition: 0.3s;
+                        }
+
 
                     @include pc{
                         font-size: 1.5vw;   
@@ -469,7 +474,7 @@ header{
 
 .about{
     background-color: white;
-    
+
     &-wrapper{
         position: relative;
         z-index: 1;
@@ -1246,27 +1251,10 @@ header{
     z-index: -1;
 }
 
-.recruit::before{
-    background-image: url(../img/recruit-background.png);
-	content: "";
-    height: 100vh;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat; 
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-}
-
 
 .recruit{
     position: relative;
-    /*
+    
     background-image: url(../img/recruit-background.png);
     width: 100%;
     height: auto;
@@ -1277,7 +1265,6 @@ header{
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat; 
-    */ 
     padding-bottom: 139px;
     padding-top: 147px;
     z-index: -1;
@@ -1288,9 +1275,6 @@ header{
         padding-bottom: 38px;
     }
 
-
-    
-    
     &-inner{
         .title-block{
             text-align: center;
