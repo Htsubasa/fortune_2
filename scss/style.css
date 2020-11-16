@@ -1631,7 +1631,7 @@ html body .info .info_wrap .info_container .info_fix {
   height: 460px;
   background-attachment: fixed;
   background-position: -20px;
-  background-size: 100%;
+  /*background-size: 100%;*/
   background-repeat: no-repeat;
   margin: 0 0 0 auto;
 }
