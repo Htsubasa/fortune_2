@@ -1827,7 +1827,7 @@ html body .info .info_wrap .info-table .company-table tr td .google {
 
 html body .philosophy {
   padding-top: 155px;
-  margin-bottom: 135px;
+  padding-bottom: 135px;
   background-color: white;
   /*wrap*/
 }
@@ -1835,7 +1835,7 @@ html body .philosophy {
 @media (max-width: 560px) {
   html body .philosophy {
     padding-top: 285px;
-    margin-bottom: 53px;
+    padding-bottom: 53px;
   }
 }
 
@@ -2010,7 +2010,7 @@ html body .philosophy .philosophy_wrap .philosophy_text_wrap .philosophy_text {
   }
 }
 
-html body .recruit:before {
+html body .recruit::after {
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -2023,18 +2023,38 @@ html body .recruit:before {
   z-index: -1;
 }
 
-html body .recruit {
-  position: relative;
+html body .recruit::before {
   background-image: url(../img/recruit-background.png);
-  width: 100%;
-  height: auto;
-  background-attachment: fixed;
+  content: "";
+  height: 100vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+html body .recruit {
+  position: relative;
+  /*
+    background-image: url(../img/recruit-background.png);
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    */
   padding-bottom: 139px;
   padding-top: 147px;
-  z-index: 0;
+  z-index: -1;
+  height: 100%;
 }
 
 @media (max-width: 425px) {
@@ -2111,6 +2131,9 @@ html body .recruit-inner .job-container {
   margin: 0 auto;
   margin-bottom: 28px;
   margin-top: 50px;
+  position: sticky;
+  position: -webkit-sticky;
+  /* Safari */
   /*タブのスタイル*/
   /*ラジオボタンを全て消す*/
   /*タブ切り替えの中身のスタイル*/
