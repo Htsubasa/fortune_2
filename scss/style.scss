@@ -77,9 +77,11 @@ html{
 
 body{
   font-family: 'Noto Sans JP', sans-serif;
+  background-color: white;
 
 header{
-    
+    background-color: white;
+
     .header-inner{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -466,6 +468,8 @@ header{
 
 
 .about{
+    background-color: white;
+    
     &-wrapper{
         position: relative;
         z-index: 1;

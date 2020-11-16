@@ -660,6 +660,7 @@ html {
 
 html body {
   font-family: 'Noto Sans JP', sans-serif;
+  background-color: white;
   /*mainvisual*/
   /*about*/
   /*brand*/
@@ -671,6 +672,7 @@ html body {
 }
 
 html body header {
+  background-color: white;
   /*inner*/
 }
 
@@ -1121,6 +1123,7 @@ html body .mainvisual-wrapper .mvactive {
 }
 
 html body .about {
+  background-color: white;
   /*wrapper*/
 }
 
