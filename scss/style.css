@@ -1109,7 +1109,6 @@ html body .mainvisual-wrapper .mv {
 @media (max-width: 560px) {
   html body .mainvisual-wrapper .mv {
     width: 100%;
-    height: auto;
   }
 }
 
